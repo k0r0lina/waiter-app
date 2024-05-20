@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { getTableById } from '../../../redux/tablesRedux';
-import TableForm from '../../features/TableForm/TableForm';
+import SingleTableForm from '../../features/SingleTableForm/SingleTableForm';
 
 const Table = () => {
   const { id } = useParams();
@@ -9,7 +9,7 @@ const Table = () => {
 
   return (
     <div>
-      <TableForm table={table} />
+      <SingleTableForm table={table} />
     </div>
   );
 };
